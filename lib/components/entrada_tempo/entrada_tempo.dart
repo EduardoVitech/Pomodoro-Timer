@@ -48,7 +48,7 @@ class EntradaTempo extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 shape: const CircleBorder(),
                 padding: const EdgeInsets.all(15),
-                primary: Colors.green,
+                primary: Colors.red,
               ),
               child: const Icon(
                 Icons.arrow_upward,
