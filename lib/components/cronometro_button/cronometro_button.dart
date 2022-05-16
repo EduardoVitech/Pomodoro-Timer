@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class CronometroButton extends StatelessWidget {
   final String texto;
   final IconData icone;
+  final void Function()? press;
 
   const CronometroButton({
     required this.texto,
     required this.icone,
+    this.press,
   });
 
   @override
@@ -22,7 +24,7 @@ class CronometroButton extends StatelessWidget {
           fontSize: 20,
         ),
       ),
-      onPressed: () {},
+      onPressed: press,
       child: Row(
         children: [
           Padding(
